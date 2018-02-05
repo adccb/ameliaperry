@@ -31,14 +31,6 @@ p {
   margin: 0 0 25px;
 }
 
-@media (min-width: 768px) {
-  p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 0 0 35px;
-  }
-}
-
 a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -91,7 +83,33 @@ a:focus, a:hover {
   background-color: transparent;
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+  ul.banner-social-buttons li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-social-buttons li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    margin-top: 15px;
+  }
+
+  .brand-heading {
+    font-size: 60px;
+  }
+}
+
 @media (min-width: 992px) {
+  .masthead .intro-body .brand-heading {
+    font-size: 70px !important;
+  }
   #mainNav {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -114,6 +132,31 @@ a:focus, a:hover {
   }
   #mainNav .nav-link.active:hover {
     color: white;
+  }
+  .content-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  #map {
+    height: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  .masthead {
+    height: 100% !important;
+    padding: 0 !important;
+  }
+  .masthead .intro-body .brand-heading {
+    font-size: 50px !important;
+  }
+  .masthead .intro-body .intro-text {
+    font-size: 22px !important;
+  }
+  p {
+    font-size: 18px !important;
+    line-height: 1.6 !important;
+    margin: 0 0 35px !important;
   }
 }
 
@@ -147,18 +190,7 @@ a:focus, a:hover {
 }
 
 
-@media (min-width: 768px) {
-  .masthead {
-    height: 100%;
-    padding: 0;
-  }
-  .masthead .intro-body .brand-heading {
-    font-size: 70px;
-  }
-  .masthead .intro-body .intro-text {
-    font-size: 22px;
-  }
-}
+
 
 
 .btn-circle {
@@ -202,15 +234,7 @@ a:focus, a:hover {
   height: 300px;
 }
 
-@media (min-width: 992px) {
-  .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-  #map {
-    height: 350px;
-  }
-}
+
 
 .btn {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -239,26 +263,7 @@ ul.banner-social-buttons {
   margin-top: 0;
 }
 
-@media (max-width: 1199px) {
-  ul.banner-social-buttons {
-    margin-top: 15px;
-  }
 
-  .brand-heading {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 767px) {
-  ul.banner-social-buttons li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  ul.banner-social-buttons li:last-child {
-    margin-bottom: 0;
-  }
-}
 
 footer {
   padding: 50px 0;
