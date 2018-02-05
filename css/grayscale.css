@@ -43,6 +43,11 @@ a:focus, a:hover {
   color: #1d9b6c;
 }
 
+.flex-center {
+  display: flex; 
+  align-items: center;
+}
+
 #mainNav {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 0;
